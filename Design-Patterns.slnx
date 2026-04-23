@@ -1,3 +1,4 @@
 <Solution>
+  <Project Path="Composite/Composite.csproj" Id="d12eabb1-4823-4c93-91b2-497d9da7a73c" />
   <Project Path="Singleton/Singleton.csproj" />
 </Solution>

@@ -7,7 +7,7 @@ namespace Singleton;
 
 public class Singleton
 {
-    private static Singleton instance;
+    private static Singleton? instance;
 
     private Singleton()
     {
