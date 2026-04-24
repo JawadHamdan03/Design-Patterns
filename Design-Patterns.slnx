@@ -1,4 +1,5 @@
 <Solution>
   <Project Path="Composite/Composite.csproj" Id="d12eabb1-4823-4c93-91b2-497d9da7a73c" />
+  <Project Path="Decorator/Decorator.csproj" Id="2dacdee6-5f16-445a-926a-21f76a219b69" />
   <Project Path="Singleton/Singleton.csproj" />
 </Solution>
