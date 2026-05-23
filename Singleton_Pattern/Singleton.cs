@@ -17,11 +17,15 @@ public sealed class Singleton
 
     public static Singleton CreateInstance()
     {
-        lock (_lock) // this lock will work, but will be used on every refernce to Singleton
+        if (_Instance is null)
         {
-            if (_Instance is null)
-                _Instance = new Singleton();
-            return _Instance;
+            lock (_lock) // ony get a lock if _Instance is null 
+            {
+                if (_Instance is null)
+                    _Instance = new Singleton();
+                
+            }
         }
+        return _Instance;
     }
 }
