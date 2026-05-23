@@ -8,6 +8,7 @@ public sealed class Singleton
 {
     private static Singleton? _Instance { get; set; }
 
+    private static readonly object _lock = new();
 
     private Singleton()
     {
@@ -16,7 +17,11 @@ public sealed class Singleton
 
     public static Singleton CreateInstance()
     {
-        return _Instance ??= new Singleton(); // if many threads reach this line this could cause many instanciation
-                                 
+        lock (_lock) // this lock will work, but will be used on every refernce to Singleton
+        {
+            if (_Instance is null)
+                _Instance = new Singleton();
+            return _Instance;
+        }
     }
 }
