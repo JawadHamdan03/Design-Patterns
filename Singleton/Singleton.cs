@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Singleton_Pattern;
+namespace Singleton;
 
 public sealed class Singleton
 {

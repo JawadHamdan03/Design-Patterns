@@ -1,3 +1,5 @@
 <Solution>
-  <Project Path="Singleton_Pattern/Singleton_Pattern.csproj" Id="39c931b2-48ef-43de-a40d-36972d16e6b7" />
+  <Project Path="Composite/Composite.csproj" Id="4f03d3e9-9470-4705-b8d8-3863b480cfea" />
+  <Project Path="Run/Run.csproj" Id="4c50c8bc-4121-4b97-a2b7-a9dc663ccc68" />
+  <Project Path="Singleton/Singleton.csproj" Id="299f53cf-0c86-4545-bc78-396163ac061b" />
 </Solution>

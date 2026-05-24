@@ -1,0 +1,29 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Composite;
+
+public class Leaf : Component
+{
+    public override void Add(Component component)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Leaf(string name) :base(name)
+    {
+        
+    }
+    public override void PrimaryOperation(int depth)
+    {
+        Console.WriteLine(new String('-',depth)+Name);
+    }
+
+    public override void Remove(Component component)
+    {
+        throw new NotImplementedException();
+    }
+}
