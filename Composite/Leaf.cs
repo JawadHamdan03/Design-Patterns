@@ -8,10 +8,7 @@ namespace Composite;
 
 public class Leaf : Component
 {
-    public override void Add(Component component)
-    {
-        throw new NotImplementedException();
-    }
+    
 
     public Leaf(string name) :base(name)
     {
@@ -22,8 +19,5 @@ public class Leaf : Component
         Console.WriteLine(new String('-',depth)+Name);
     }
 
-    public override void Remove(Component component)
-    {
-        throw new NotImplementedException();
-    }
+    
 }

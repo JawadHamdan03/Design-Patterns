@@ -14,7 +14,7 @@ public class Composite : Component
 
     }
 
-    public override void Add(Component component)
+    public  void Add(Component component)
     {
         children.Add(component);
     }
@@ -28,7 +28,7 @@ public class Composite : Component
         }
     }
 
-    public override void Remove(Component component)
+    public  void Remove(Component component)
     {
         children.Remove(component);
     }

@@ -9,7 +9,6 @@ public abstract class Component
     }
     
     public abstract void PrimaryOperation(int depth);
-    public abstract void Add(Component component);
-    public abstract void Remove(Component component);
+    
 
 }
